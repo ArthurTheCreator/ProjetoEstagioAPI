@@ -2,7 +2,6 @@
 
 namespace ProjetoEstagioAPI.Models
 {
-    [Table("Product")]
     public class Product : BaseEntity
     {
         public string Name { get; set; }
@@ -13,6 +12,9 @@ namespace ProjetoEstagioAPI.Models
         public long Stock { get; set; }
 
         public Brand? Brand { get; set; }
+
+        public Product()
+        { }
 
         public Product(string name, string code, string description, decimal price, long brandId, long stock, Brand? brand)
         {

@@ -14,9 +14,13 @@ namespace ProjetoEstagioAPI.Infrastructure.Default
             _context = context;
             _dbSet = dbSet;
         }
-        public async Task<List<TEntity>> GetAll()
+        public async Task<List<TEntity>> GetAllAsync()
         {
             return await _dbSet.ToListAsync();
+        }
+        public List<TEntity> GetAll()
+        {
+            return  _dbSet.ToList();
         }
         public async Task<TEntity?> Get(long id)
         {

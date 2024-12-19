@@ -9,4 +9,6 @@ public class Client : BaseEntity
     public string Phone { get; set; }
 
     public List<Order?> Order { get; set; }
+    public Client()
+    { }
 }

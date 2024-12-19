@@ -12,10 +12,6 @@
 
   <ItemGroup>
 	  <Folder Include="Mapping\Clients\" />
-	  <Folder Include="Mapping\Orders\" />
-	  <Folder Include="Infrastructure\Brands\" />
-	  <Folder Include="Infrastructure\Order\" />
-	  <Folder Include="Infrastructure\Products\" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.0">
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
