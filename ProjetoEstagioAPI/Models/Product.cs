@@ -12,6 +12,7 @@ namespace ProjetoEstagioAPI.Models
         public long Stock { get; set; }
 
         public Brand? Brand { get; set; }
+        public ProductOrder? ProductOrder { get; set; }
 
         public Product()
         { }

@@ -1,6 +1,6 @@
 ﻿namespace ProjetoEstagioAPI.Models;
 
-public class ProductOrder
+public class ProductOrder : BaseEntity
 {
     public long ProductId { get; set; }
     public int Quantity { get; set; }
