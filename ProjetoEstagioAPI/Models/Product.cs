@@ -13,5 +13,16 @@ namespace ProjetoEstagioAPI.Models
         public long Stock { get; set; }
 
         public Brand? Brand { get; set; }
+
+        public Product(string name, string code, string description, decimal price, long brandId, long stock, Brand? brand)
+        {
+            Name = name;
+            Code = code;
+            Description = description;
+            Price = price;
+            BrandId = brandId;
+            Stock = stock;
+            Brand = brand;
+        }
     }
 }

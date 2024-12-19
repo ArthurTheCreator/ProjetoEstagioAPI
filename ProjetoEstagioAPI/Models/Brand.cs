@@ -10,5 +10,12 @@ namespace ProjetoEstagioAPI.Models
         public string Description { get; set; }
 
         public List<Product>? Products { get; set; }
+
+        public Brand(string name, string code, string description)
+        {
+            Name = name;
+            Code = code;
+            Description = description;
+        }
     }
 }
